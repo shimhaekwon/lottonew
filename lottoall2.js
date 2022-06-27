@@ -245,7 +245,7 @@ funcSetBaseTable = function(){
 			trHtml = "<tr>";
 			for (var j=0; j<8 ; j++)
 			{
-				trHtml = trHtml + "<td class='td8'>" + lottodata[i][j] + "</td>";
+				trHtml = trHtml + "<td >" + lottodata[i][j] + "</td>";
 			}
 			trHtml = trHtml + "</tr>";
 			$("#tableBaseData tbody").append(trHtml);
@@ -311,16 +311,16 @@ funcSetReAppearTable = function(){
 			}
 
 			trHtml = "<tr>";
-			trHtml = trHtml + "<td class='td8'>" + lottoObj.arrReAppear[i].seq + "</td>";
+			trHtml = trHtml + "<td >" + lottoObj.arrReAppear[i].seq + "</td>";
 			for (var j=0; j < 6 ; j++)
 			{
-				trHtml = trHtml + "<td class='td8'>" + lottoObj.arrReAppear[i].arr[j] + "</td>";
+				trHtml = trHtml + "<td >" + lottoObj.arrReAppear[i].arr[j] + "</td>";
 				if (lottoObj.arrReAppear[i].arr[j] > 0)
 				{
 					reAppCnt = reAppCnt + 1;
 				}
 			}
-			trHtml = trHtml + "<td class='td8'>" + reAppCnt + "</td>";
+			trHtml = trHtml + "<td >" + reAppCnt + "</td>";
 			trHtml = trHtml + "</tr>";
 			$("#tableBaseDataReAppear tbody").append(trHtml);
 		}
@@ -549,9 +549,9 @@ funcSetSideDataTable = function(pTarget, pType, pSkip, pGame, pList){
 	}
 
 	var thtrWidth = 21 * (Math.ceil(colLimit)+1);
-	$tBody.parent().css("width",thtrWidth+30);
-	$tHead.css("width",thtrWidth+10);
-	$tBody.css("width",thtrWidth+30);
+	// $tBody.parent().css("width",thtrWidth+30);
+	// $tHead.css("width",thtrWidth+10);
+	// $tBody.css("width",thtrWidth+30);
 
 	tHeadHtml = "<tr><th >SEQ</th>";
 	for (var c=0; c<Math.ceil(colLimit); c++)
@@ -574,7 +574,7 @@ funcSetSideDataTable = function(pTarget, pType, pSkip, pGame, pList){
 				 i--)
 		{
 			tBodyHtml = "<tr>";
-			tBodyHtml = tBodyHtml + "<td '>" + objArr[i].seq + "</td>";
+			tBodyHtml = tBodyHtml + "<td>" + objArr[i].seq + "</td>";
 			for (var j=0; j < Math.ceil(colLimit) ; j++)
 			{
 				tBodyHtml = tBodyHtml + "<td>" + objArr[i].arr[j] + "</td>";
@@ -653,9 +653,9 @@ funcSetSideFreqTable = function(pTarget, pType, pSkip, pGame, pList){
 	var arrFreq = funcSetFreqArray(pType, objArr, baseSeq, pSkip, pGame, pList);
 
 	var thtrWidth = 21 * (Math.ceil(colLimit)+1);
-	$tBody.parent().css("width",thtrWidth+30);
-	$tHead.css("width",thtrWidth+10);
-	$tBody.css("width",thtrWidth+30);
+	// $tBody.parent().css("width",thtrWidth+30);
+	// $tHead.css("width",thtrWidth+10);
+	// $tBody.css("width",thtrWidth+30);
 	var trHtml = "";
 	tHeadHtml = "<tr><th >SEQ</th>";
 	for (var c=0; c<Math.ceil(colLimit); c++)
@@ -832,9 +832,9 @@ funcSetSideFreqSumTable = function(pTarget, pType, pSkip, pGame, pList){
 	var arrFreqSum = funcSetFreqSumArray(pType, objArr, baseSeq, pSkip, pGame, pList);
 
 	var thtrWidth = 21 * (Math.ceil(colLimit)+1);
-	$tBody.parent().css("width",thtrWidth+30);
-	$tHead.css("width",thtrWidth+10);
-	$tBody.css("width",thtrWidth+30);
+	//$tBody.parent().css("width",thtrWidth+30);
+	//$tHead.css("width",thtrWidth+10);
+	//$tBody.css("width",thtrWidth+30);
 	
 	tHeadHtml = "<tr><th>SEQ</th>";
 	for (var c=0; c<Math.ceil(colLimit); c++)

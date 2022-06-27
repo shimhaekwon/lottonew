@@ -25,7 +25,7 @@ table {
 thead {
 	position:relative;
 	float:left; 
-  display:block;
+  display:contents;
 }
 
 tbody {
@@ -49,6 +49,7 @@ tbody tr{
 th, td {
 	width:50px;
 	border:1px solid silver;
+	text-align:right;
 }
 /*
 .divForFixedHeaderTable{
