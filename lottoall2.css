@@ -1,25 +1,27 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 @viewport {
     width : device-width;
 }
 
 body {
-	font-family:Courier New, Dotum, Verdana, Gulim, Tahoma, Verdana, arial, AppleGothic, UnDotum, "sans-serif"; 
-	font-size:10px; 
-	
+	font-family:
+	Courier New, Dotum, Verdana, Gulim, Tahoma, Verdana, arial, AppleGothic, UnDotum, "sans-serif";
+	/*font-size:smaller;*/
 }
 
 div {
 	position:relative;
 	float:left;
 	width:100%;
+	font-size:smaller;
 }
 
 table {
     table-layout: fixed;
     border-collapse: collapse;
     overflow:auto;
+	font-size:smaller;
 }
 
 thead {
@@ -47,7 +49,7 @@ tbody tr{
 }
 
 th, td {
-	width:50px;
+	width:30px;
 	border:1px solid silver;
 	text-align:right;
 }
@@ -106,5 +108,5 @@ th, td {
 
 .tdWon	{
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 12px;
 }
