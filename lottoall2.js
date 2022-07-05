@@ -808,7 +808,7 @@ funcSetSideFreqSumTable = function(pTarget, pType, pSkip, pGame, pList){
 
 	$tHead.html("");
 	$tBody.html("");
-	colLimit = 45;	//Number(pType.substring(0,2));
+	colLimit = 40;	//Number(pType.substring(0,2));
 	//colLimit = 15;	//Number(pType.substring(0,2));
 
 	switch ( pType.substring(2,3) )
