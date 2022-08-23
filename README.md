@@ -45,3 +45,6 @@ Analyse korean lotto system ....
 30회 구간에서 약했던 2빈도 이하에서 평균 1수+@(0~2)
 
 30회 구간 중  3,4,5,6 구간에서 &nbsp;3수+@(3~5)를 기본적으로 가져가는 조합이 기본적으로 구성되어져야 합니다
+
+
+https://www.codingworldnews.com/news/articleView.html?idxno=7288
