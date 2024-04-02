@@ -202,12 +202,12 @@
     handleEvent: function (e) {
       var that = this;
       switch(e.type) {
-        case START_EV:
-          if (!hasTouch && e.button !== 0) return;
-          that._start(e);
-          break;
-        case MOVE_EV: that._move(e); break;
-        case END_EV:
+        // case START_EV:
+        //   if (!hasTouch && e.button !== 0) return;
+        //   that._start(e);
+        //   break;
+        // case MOVE_EV: that._move(e); break;
+        // case END_EV:
         case CANCEL_EV: that._end(e); break;
         case RESIZE_EV: that._resize(); break;
         case 'DOMMouseScroll': case 'mousewheel': that._wheel(e); break;
@@ -350,7 +350,7 @@
   
       if (that.options.useTransition || that.options.zoom) that._transitionTime(0);
   
-      that.moved = false;
+      //that.moved = false;
       that.animating = false;
       that.zoomed = false;
       that.distX = 0;
